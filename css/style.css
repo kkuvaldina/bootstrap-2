@@ -1,13 +1,18 @@
 body {
-    font: 400 15px/1.8 Lato, sans-serif;
+    /*font: 400 15px/1.8 Metal Mania, cursive;*/
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 500;
+    font-size: 18px;
     color: #777;
 }
   
 h3, h4 {
     margin: 10px 0 30px 0;
     letter-spacing: 10px; 
-    font-size: 20px;
+    font-size: 22px;
     color: #111;
+    font-weight: 800;
+    
   }
   
 .form-control {
@@ -32,7 +37,7 @@ textarea {
     height: 80%;
     opacity: 0.7;
   }
-  .person:hover {
+.person:hover {
     border-color: #f1f1f1;
 }
 .carousel-inner img {
@@ -44,10 +49,11 @@ textarea {
   
 .carousel-caption h3 {
     color: #fff !important;
+    text-shadow: 1px 1px 3px black;
 }
   
 .bg-1 {
-    background: #2d2d30;
+    background: #3c000d;
     color: #bdbdbd;
 }
 .bg-1 h3 {color: #fff;}
@@ -56,12 +62,12 @@ textarea {
 .list-group-item:first-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-  }
+}
   
-  .list-group-item:last-child {
+.list-group-item:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-  }
+}
   
 .thumbnail {
     padding: 0 0 15px 0;
@@ -90,7 +96,7 @@ textarea {
   }
 
 .modal-header, h4, .close {
-    background-color: #333;
+    background-color: #3c000d;
     color: #fff !important;
     text-align: center;
     font-size: 30px;
@@ -113,27 +119,36 @@ textarea {
     font-size: 11px !important;
     letter-spacing: 4px;
     opacity: 0.9;
-    padding: 10px;
   }
   
 .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
+    color: black !important;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 16px;
+
 }
   
 .navbar-nav li a:hover {
-    color: #fff !important;
+    color: #3c000d !important;
 }
-  
+
 .navbar-nav li.active a {
     color: #fff !important;
-    background-color:#29292c !important;
+    background-color:#3c000d !important;
 }
   
 .navbar-default .navbar-toggle {
     border-color: transparent;
     
 }
-  
+
+.navbar-right {margin-top: 20px;}
+
+.dropdown-menu li a:hover {
+    background-color: #3c000d !important;
+    color: white !important;
+    
+}
 .open .dropdown-toggle {
     color: #fff ;
     background-color: #555 !important;
@@ -142,13 +157,9 @@ textarea {
 .dropdown-menu li a {
     color: #000 !important;
 }
-  
-.dropdown-menu li a:hover {
-    background-color: red !important;
-}
 
 footer {
-    background-color: #2d2d30;
+    background-color: #3c000d;
     color: #f5f5f5;
     padding: 32px;
 }
@@ -167,8 +178,8 @@ footer a:hover {
 }
 
 .person {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 img[src^="img/city"] {
@@ -176,9 +187,41 @@ img[src^="img/city"] {
    height: 100%;
 }
 
+img[src^="img/album"] {
+    max-height: 250px;
+    height: 100%;
+}
+
+img[src^="img/Rammstein"] {
+    max-width: 200px;
+    width: 100%;
+    border: 10px solid transparent;
+    margin-top: 10px;
+}
+
+button[onclick^="window.location.href"] {
+    margin-bottom: 20px;
+}
+
 .navbar-brand img {
     height: 45px;
 }
+
+.col-sm-3 a {
+    text-decoration: none;
+    color: #3c000d;
+}
+
+img[src^="img/Rammstein"]:hover {
+    border-color: #f1f1f1;
+}
+
+.fa {
+    width: 15px;
+    height: 15px;
+}
+
+
 
 @media (max-width: 600px) {
     .carousel-caption {
